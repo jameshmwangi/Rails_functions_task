@@ -1,6 +1,9 @@
 <p>
   <strong>Name:</strong>
   <%= @user.name %>
+  <% if @user.profile_image.attached? %>
+    <%= image_tag @user.profile_image %>
+  <% end %>
 </p>
 
 <p>
